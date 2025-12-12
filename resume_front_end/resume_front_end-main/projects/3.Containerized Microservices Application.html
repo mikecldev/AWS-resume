@@ -1,0 +1,4 @@
+A task management application split into multiple independent services running in Docker containers, orchestrated by AWS ECS. 
+Instead of building one large application, created four smaller applications (microservices) that work together: 
+a gateway that routes requests, a task service for managing tasks, a user service for handling users, and a notification service for alerts. 
+Each service runs in its own Docker container (like a lightweight virtual machine), and AWS ECS manages them—starting, stopping,and scaling automatically based on traffic.

@@ -1,0 +1,49 @@
+# ============================================================================
+# Terraform Variables Configuration
+# ============================================================================
+# Copy this file to terraform.tfvars and fill in your values
+# DO NOT commit terraform.tfvars to Git (it contains secrets!)
+# ============================================================================
+
+# General Configuration
+aws_region   = "eu-west-2"  # London region
+environment  = "prod"
+project_name = "cloud-resume"
+
+# reCAPTCHA Configuration (REQUIRED)
+recaptcha_secret_key = "6LcXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"  # Get from https://www.google.com/recaptcha/admin
+
+# Custom Domain (Optional - set to false if not using custom domain)
+enable_custom_domain = false
+domain_name          = ""  # e.g., "michailkakos.com" or "www.michailkakos.com"
+acm_certificate_arn  = ""  # Required if enable_custom_domain = true
+
+# Lambda Configuration
+lambda_runtime     = "python3.12"
+lambda_memory_size = 256
+lambda_timeout     = 30
+
+# DynamoDB Configuration
+dynamodb_billing_mode = "PAY_PER_REQUEST"  # or "PROVISIONED"
+enable_dynamodb_pitr  = true
+
+# CloudFront Configuration
+cloudfront_price_class  = "PriceClass_100"  # US, Canada, Europe
+cloudfront_default_ttl  = 86400             # 24 hours
+cloudfront_max_ttl      = 31536000          # 1 year
+cloudfront_min_ttl      = 0
+
+# API Gateway Configuration
+api_gateway_throttle_burst_limit = 5000
+api_gateway_throttle_rate_limit  = 10000
+
+# Logging Configuration
+log_retention_days        = 7
+enable_api_gateway_logging = true
+
+# Additional Tags (Optional)
+additional_tags = {
+  Owner       = "Michail Kakos"
+  CostCenter  = "Personal"
+  Backup      = "true"
+}

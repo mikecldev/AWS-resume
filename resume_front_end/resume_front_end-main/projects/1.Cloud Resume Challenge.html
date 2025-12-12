@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cloud Resume Challenge Journey</title>
+    <style>
+        /* --- General Styling and Layout --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #e0e0e0;
+            margin: 30px 0;
+        }
+
+        /* --- Typography and Headings --- */
+        h1 {
+            color: #0073e6;
+            font-size: 2.5em;
+            border-bottom: 3px solid #0073e6;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #1a1a1a;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        h3 {
+            color: #0073e6;
+            font-size: 1.3em;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        /* --- Links and Callouts --- */
+        a {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #005bb5;
+        }
+
+        /* Styling for key terms (e.g., DynamoDB, Terraform) */
+        strong {
+            color: #333;
+            font-weight: 700;
+        }
+        
+        .highlight {
+            background-color: #e6f3ff; /* Light blue pill background */
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+
+        /* --- Lists (UL and OL) --- */
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        /* Custom bullet point (e.g., a simple blue dot) */
+        ul li::before {
+            content: '•';
+            color: #0073e6;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+        }
+
+        /* --- Image Styling (for Diagrams) --- */
+        .diagram {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* --- Final Thoughts Emphasis --- */
+        .callout-action {
+            font-size: 1.4em;
+            font-weight: 800;
+            text-align: center;
+            color: #ff5722; /* A strong, action-oriented color */
+            margin: 30px 0;
+            padding: 15px;
+            border: 2px dashed #ff5722;
+            background-color: #fff3e0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>My Cloud Resume Challenge Journey — A Deep Technical Learning Experience</h2>
+
+        <p>
+            After several intense weeks, my Cloud Resume Challenge project is **LIVE**! This was a deep dive into full-stack cloud architecture, that pushed me far beyond theory, requiring real architecture, real automation, real problem-solving, and real deployment.
+        </p>
+
+        <h2>Check out the live site and source code.</h2>
+        <ul>
+            <li>🔗 **Live Project:** <a href="https://www.michailkakos-resume.com" target="_blank">https://www.michailkakos-resume.com</a></li>
+            <li>💻 **Source Code:** <a href="https://lnkd.in/eHgdf8xD" target="_blank">https://lnkd.in/eHgdf8xD</a></li>
+        </ul>
+
+        <hr>
+
+        <h2>What is the Cloud Resume Challenge?</h2>
+        <p>
+            The Cloud Resume Challenge (CRC) is a practical, end-to-end cloud project that requires you to:
+        </p>
+        <ul class="crc-requirements">
+            <li>Build and host a resume website in the cloud</li>
+            <li>Implement a serverless backend with a visitor counter</li>
+            <li>Store data in a managed NoSQL database</li>
+            <li>Use Infrastructure as Code</li>
+            <li>Deploy via automated CI/CD pipelines</li>
+            <li>Prove your cloud, programming, security, and DevOps skills in one integrated solution</li>
+        </ul>
+        <p>
+            It simulates the real workflows of cloud engineers and solutions architects — not just passing an exam but building something that works at production-level standards.
+        </p>
+
+        <hr>
+
+        <h2>Why I Took Up This Challenge</h2>
+        <p>
+            Coming from a network engineering background, I wanted a project that would push me beyond networking into full cloud architecture, but I had to grow in:
+        </p>
+        <ul class="growth-areas">
+            <li>Python backend development</li>
+            <li>Serverless event-driven patterns</li>
+            <li>NoSQL modeling(DynamoDB)</li>
+            <li>Terraform IaC structures</li>
+            <li>CI/CD automation and testing</li>
+            <li>Cloud-native observability</li>
+        </ul>
+        <p>
+            This project truly bridges traditional networking with modern cloud engineering.
+        </p>
+
+        <hr>
+
+        <h2>Architecture of the Solution</h2>
+
+        
+        <img src="/images/CRC-diagram.png" alt="Diagram showing the AWS architecture: S3/CloudFront/Route 53 for Frontend, API Gateway/Lambda/DynamoDB for Backend." class="diagram">
+
+
+        <h3>Frontend</h3>
+        <ul>
+            <li>S3 – static hosting</li>
+            <li>CloudFront – global CDN with caching policies</li>
+            <li>ACM + Route 53 – HTTPS + custom DNS routing</li>
+        </ul>
+
+        <h3>Backend</h3>
+        <ul>
+            <li>API Gateway (REST) – visitor request routing</li>
+            <li>AWS Lambda (Python) – business logic, geo-lookup, idempotent updates</li>
+            <li>DynamoDB – visitor counter + geolocation analytics</li>
+        </ul>
+
+        <h3>DevOps & Automation</h3>
+        <ul>
+            <li>Terraform – fully modular Infrastructure as Code</li>
+            <li>GitHub Actions – CI/CD with: Pytest unit + integration testing</li>
+        </ul>
+
+        <hr>
+
+        <h2>What Were the Biggest Challenges?</h2>
+        <ol>
+            <li>Terraform state & modularisation: Building reusable, hierarchical modules while managing state safely.</li>
+            <li>DynamoDB conditional updates: Ensuring atomic increments during concurrent requests.</li>
+            <li>CI/CD packaging for Lambda: Correctly bundling dependencies and tests for Python Lambda deployments.</li>
+            <li>CloudFront invalidation automation: Ensuring new versions deploy globally without downtime.</li>
+            <li>Data model design: Supporting visitor counting + geolocation analytics with a single-table pattern.</li>
+            <li>Security hardening: IAM least privilege, bot protection, API throttling, and misconfiguration prevention.</li>
+        </ol>
+
+        <hr>
+
+        <h2>Key Takeaways</h2>
+        <ul>
+            <li>Cloud engineering requires end-to-end thinking, not just service knowledge</li>
+            <li>CI/CD transforms development velocity and consistency</li>
+            <li>Serverless simplifies ops but requires good design and testing</li>
+            <li>IaC is essential for modern infrastructure reproducibility</li>
+            <li>Logging, monitoring, and metrics matter from day one</li>
+            <li>The best learning happens by building something real</li>
+        </ul>
+
+        <hr>
+
+        <h2>Final Thoughts</h2>
+        <p>
+            This challenge wasn’t just a project — it was a hands-on simulation of real cloud engineering work:
+        </p>
+        <div class="callout-action">
+            Architect. Develop. Automate. Secure. Monitor. Iterate.
+        </div>
+        <p>
+            It helped me push beyond tutorials to design a system that:
+        </p>
+        <ul>
+            <li>Scales globally</li>
+            <li>Deploys automatically</li>
+            <li>Operates securely</li>
+            <li>Produces real analytics</li>
+            <li>Demonstrates practical, job-ready cloud engineering skills</li>
+        </ul>
+        <p>
+            I highly recommend it for anyone seeking real-world experience.
+        </p>
+    </div>
+
+</body>
+</html>
