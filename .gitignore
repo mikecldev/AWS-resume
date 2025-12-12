@@ -1,37 +1,77 @@
-# Local .terraform directories
-.terraform/
+# --- PYTHON (BACKEND) EXCLUSIONS ---
+# Compiled Files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
 
-# .tfstate files
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing Artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+*.egg-info/ # Common Python packaging artifact
+
+# Distribution / Packaging / Lambda
+build/
+dist/
+*.zip
+lambda-package/
+package/
+.aws-sam/
+samconfig.toml
+
+# --- TERRAFORM (IAC) EXCLUSIONS ---
+# CRITICAL: State Files and Secrets
+**/.terraform/*
 *.tfstate
 *.tfstate.*
-
-# Crash log files
-crash.log
-crash.*.log
-
-# Exclude all .tfvars files, which are likely to contain sensitive data, such as
-# password, private keys, and other secrets. These should not be part of version 
-# control as they are data points which are potentially sensitive and subject 
-# to change depending on the environment.
 *.tfvars
 *.tfvars.json
-
-# Ignore override files as they are usually used to override resources locally and so
-# are not checked in
+crash.log
+crash.*.log
 override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
-
-# Ignore transient lock info files created by terraform apply
-.terraform.tfstate.lock.info
-
-# Include override files you do wish to add to version control using negated pattern
-# !example_override.tf
-
-# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
-# example: *tfplan*
-
-# Ignore CLI configuration files
 .terraformrc
 terraform.rc
+encryption.json
+.terraform.lock.hcl # Include if you want to allow different provider versions locally
+
+# Backups and Import Scripts
+backups/
+terraform/import-resources.ps1
+
+# --- SECRETS & ENVIRONMENT FILES ---
+# Environment Variables & Credentials (CRITICAL)
+.env
+.env.local
+*.pem
+*.key
+**/credentials
+**/secrets.json
+aws-credentials.json
+
+# --- IDEs & OS FILES ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- GENERAL EXCLUSIONS ---
+*.log
+drafts/
+md/
