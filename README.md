@@ -35,7 +35,9 @@ External APIs:
   - ipinfo.io / ip-api.com (geolocation)
 ```
 
-**Full Architecture Diagram:** 
+                                            **Full Architecture Diagram:** 
+                                            
+
 ![Cloud Resume Challenge - Complete Serverless Architecture](resume_front_end/images/CRC-diagram.png)
 
 
@@ -68,88 +70,16 @@ cloud-resume/
 │       ├── dynamodb/          # DynamoDB module
 │       └── route53/           # Route 53 module
 │
-├── ARCHITECTURE.md            # Architecture diagram
-├── DEPLOYMENT_GUIDE.md        # Step-by-step deployment
-├── RECAPTCHA_SETUP.md         # reCAPTCHA setup guide
-├── TEST_BOT_DETECTION.md      # Bot testing guide
 └── README.md                  # This file
+
+
 ```
 
-
-## 🛡️ Security Features
-
-### reCAPTCHA v3 Bot Protection
-
-- Invisible bot detection (no challenges for users)
-- Scores requests 0.0 (bot) to 1.0 (human)
-- Blocks requests with score < 0.5
-
-### AWS Security Best Practices
-
-- S3 bucket access via CloudFront OAI only
-- Lambda least-privilege IAM role
-- HTTPS enforcement via CloudFront
-- Environment variables for secrets
-- DynamoDB encryption at rest
-- CloudWatch logging for audit trail
-
-## 📊 Key Features
-
-### Frontend
-
-- **Responsive Design** - Works on desktop, tablet, mobile
-- **Interactive Map** - Leaflet.js with visitor markers
-- **Real-time Counter** - Live visitor count
-- **Location List** - Top visitor locations
-
-### Backend
-
-- **Serverless** - No servers to manage
-- **Auto-scaling** - Handles traffic spikes
-- **Bot Protection** - reCAPTCHA v3 integration
-- **Geolocation** - IP-based location tracking
-- **Comprehensive Logging** - CloudWatch integration
-
-### Infrastructure
-
-- **Infrastructure as Code** - Terraform managed
-- **Modular Design** - Reusable components
-- **Version Control** - State management
-- **Cost Optimized** - Pay-per-use resources
-- **Highly Available** - Multi-AZ by default
-
-## 💰 Cost
-
-Estimated monthly costs with moderate traffic:
-
-| Service | Monthly Cost |
-|---------|-------------|
-| CloudFront | ~$1 |
-| S3 | ~$0.03 |
-| API Gateway | ~$0.35 |
-| Lambda | ~$0 (Free Tier) |
-| DynamoDB | ~$0.25 |
-| Route 53 (optional) | ~$0.50 |
-| reCAPTCHA | **FREE** |
-| **Total** | **$1-2/month** |
-
-
-
-## 📚 Documentation
-
-| Document | Description |
-|----------|-------------|
-| [ARCHITECTURE.md](ARCHITECTURE.md) | Complete system architecture diagram |
-| [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) | Step-by-step deployment instructions |
-| [terraform/README.md](terraform/README.md) | Terraform usage guide |
-| [RECAPTCHA_SETUP.md](RECAPTCHA_SETUP.md) | reCAPTCHA integration guide |
-| [TEST_BOT_DETECTION.md](TEST_BOT_DETECTION.md) | Manual testing guide |
-| [resume_back_end/TEST_README.md](resume_back_end/TEST_README.md) | Unit testing documentation |
 
 ## 🛠️ Technologies Used
 
 ### Frontend
-- HTML5, CSS3, JavaScript (ES6+)
+- HTML5, CSS3, JavaScript
 - Leaflet.js (interactive maps)
 - Google reCAPTCHA v3
 
@@ -175,6 +105,40 @@ Estimated monthly costs with moderate traffic:
 
 ```
 
+## 🛡️ Security Features
+
+### reCAPTCHA v3 Bot Protection
+
+- Invisible bot detection (no challenges for users)
+- Scores requests 0.0 (bot) to 1.0 (human)
+- Blocks requests with score < 0.5
+
+### AWS Security Best Practices
+
+- S3 bucket access via CloudFront OAI only
+- Lambda least-privilege IAM role
+- HTTPS enforcement via CloudFront
+- Environment variables for secrets
+- DynamoDB encryption at rest
+- CloudWatch logging for audit trail
+
+
+## 💰 Cost
+
+Estimated monthly costs with moderate traffic:
+
+| Service | Monthly Cost |
+|---------|-------------|
+| CloudFront | ~$0.05 |
+| S3 | ~$0.03 |
+| API Gateway | ~$0.35 |
+| Lambda | ~$0 (Free Tier) |
+| DynamoDB | ~$0.25 |
+| Route 53 (optional) | ~$0.50 |
+| reCAPTCHA | **FREE** |
+| **Total** | **$1-2/month** |
+
+
 ## 🎓 Skills Demonstrated
 
 - ✅ **Cloud Architecture** - Serverless design
@@ -190,32 +154,18 @@ Estimated monthly costs with moderate traffic:
 
 ```
 
-### CloudWatch Metrics
-
-- Lambda invocations
-- API Gateway requests
-- CloudFront cache hit rate
-- DynamoDB read/write units
-- Error rates and latency
-
-```
-
-## 📝 License
-
-This project is open source and available for educational purposes.
-
 ## 🔗 Links
 
 - **Cloud Resume Challenge**: https://cloudresumechallenge.dev/
-- **My LinkedIn**: [linkedin.com/in/michail-kakos](https://linkedin.com/in/michail-kakos)
-- **My GitHub**: [github.com/michailkakos](https://github.com/michailkakos)
+- **My LinkedIn**: https://www.linkedin.com/in/michail-kakos/
+- **My GitHub**: https://github.com/mikecldev/AWS-resume
 
 ## 🎯 Project Completion Checklist
 
 - [x] Static website (HTML/CSS/JavaScript)
 - [x] Deploy to S3 with static website hosting
 - [x] HTTPS via CloudFront
-- [x] Custom DNS with Route 53 (optional)
+- [x] Custom DNS with Route 53
 - [x] Visitor counter with JavaScript
 - [x] API Gateway endpoint
 - [x] Lambda function (Python)
