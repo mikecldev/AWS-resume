@@ -1,6 +1,6 @@
 ## ☁️ Cloud Resume Challenge - AWS Edition (Extended)
 
-A serverless cloud resume with visitor counter, geolocation tracking, and bot protection using AWS services and Infrastructure as Code.
+### A serverless cloud resume with visitor counter, geolocation tracking, and bot protection using AWS services and Infrastructure as Code.###
 
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
@@ -14,15 +14,20 @@ A serverless cloud resume with visitor counter, geolocation tracking, and bot pr
 This project implements the [Cloud Resume Challenge](https://cloudresumechallenge.dev/) by Forest Brazeal with additional features:
 
 
-- ✅ Static website hosted on **AWS S3**
+- ✅ Static website hosted on **AWS S3** (HTML/CSS/JavaScript)
 - ✅ HTTPS distribution via **CloudFront CDN**
 - ✅ Visitor counter API with **API Gateway + Lambda**
 - ✅ Data storage in **DynamoDB**
 - ✅ DNS management with **Route 53**
 - ✅ **Infrastructure as Code** with Terraform
-- ✅ **IP geolocation** with interactive map
+- ✅ Source control (Git)
+- ✅ CI/CD pipeline
+- ✅**Extended Features:**
+- ✅ **IP geolocation** with map visualization
 - ✅ **reCAPTCHA v3** bot protection
 - ✅ **Comprehensive unit tests**
+- ✅ Security best practices
+
 
 
 
@@ -166,31 +171,7 @@ Estimated monthly costs with moderate traffic:
 - ✅ **Documentation** - Comprehensive guides
 - ✅ **Cost Optimization** - Resource efficiency
 
-```
 
-
-## 🎯 Project Completion Checklist
-
-- [x] Static website (HTML/CSS/JavaScript)
-- [x] Deploy to S3 with static website hosting
-- [x] HTTPS via CloudFront
-- [x] Custom DNS with Route 53
-- [x] Visitor counter with JavaScript
-- [x] API Gateway endpoint
-- [x] Lambda function (Python)
-- [x] DynamoDB for data storage
-- [x] Infrastructure as Code (Terraform)
-- [x] Source control (Git)
-- [x] CI/CD pipeline
-- [x] **Extended Features:**
-  - [x] IP geolocation with map visualization
-  - [x] reCAPTCHA v3 bot protection
-  - [x] Comprehensive unit tests
-  - [x] Complete documentation
-  - [x] Modular Terraform structure
-  - [x] Security best practices
-
----
 
 ## The Road Ahead (Extended Features)
 
