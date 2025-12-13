@@ -52,7 +52,7 @@ External APIs:
 
 ![Cloud Resume Challenge - Complete Serverless Architecture](resume_front_end/images/CRC-diagram.png)
 
-
+-----
 
 ## 📁 Project Structure
 
@@ -85,7 +85,7 @@ cloud-resume/
 │
 └── README.md                  # This file
 
-
+------
 
 
 
