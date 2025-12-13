@@ -1,6 +1,6 @@
 ## ☁️ Cloud Resume Challenge - AWS Edition (Extended)
 
-### A serverless cloud resume with visitor counter, geolocation tracking, and bot protection using AWS services and Infrastructure as Code.###
+### A serverless cloud resume with visitor counter, geolocation tracking, and bot protection using AWS services and Infrastructure as Code.
 
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
