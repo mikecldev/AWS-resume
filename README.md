@@ -155,9 +155,9 @@ Estimated monthly costs with moderate traffic:
 ## 🎓 Skills Demonstrated
 
 - ✅ **Cloud Architecture** - Serverless design
-- ✅ **Infrastructure as Code** - Terraform
-- ✅ **Backend Development** - Python, Lambda
 - ✅ **Frontend Development** - HTML/CSS/JS
+- ✅ **Backend Development** - Python, Lambda
+- ✅ **Infrastructure as Code** - Terraform
 - ✅ **DevOps** - CI/CD, automation
 - ✅ **Security** - Bot protection, IAM, HTTPS
 - ✅ **Testing** - Unit tests, integration tests
