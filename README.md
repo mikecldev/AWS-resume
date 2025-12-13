@@ -53,11 +53,10 @@ External APIs:
 ![Cloud Resume Challenge - Complete Serverless Architecture](resume_front_end/images/CRC-diagram.png)
 
 
-```text
 
 ## 📁 Project Structure
 
-
+```
 cloud-resume/
 ├── resume_front_end/          # Frontend (HTML/CSS/JS)
 │   ├── index.html             # Main page
@@ -69,13 +68,11 @@ cloud-resume/
 │   ├── lambda_function.py     # Main Lambda code
 │   ├── test_lambda_function.py   # Unit tests
 │   ├── requirements-test.txt  # Test dependencies
-│   
 │
 ├── terraform/                 # Infrastructure as Code
 │   ├── main.tf                # Main Terraform config
 │   ├── variables.tf           # Input variables
 │   ├── outputs.tf             # Output values
-│   ├── README.md              # Terraform guide
 │   └── modules/               # Reusable modules
 │       ├── s3/                # S3 bucket module
 │       ├── cloudfront/        # CloudFront module
@@ -84,9 +81,9 @@ cloud-resume/
 │       ├── dynamodb/          # DynamoDB module
 │       └── route53/           # Route 53 module
 │
+├── .gitignore
 └── README.md                  # This file
-
-```text
+```
 
 
 
