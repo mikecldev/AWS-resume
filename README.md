@@ -1,4 +1,4 @@
-# ☁️ Cloud Resume Challenge - AWS Edition (Extended)
+## ☁️ Cloud Resume Challenge - AWS Edition (Extended)
 
 A serverless cloud resume with visitor counter, geolocation tracking, and bot protection using AWS services and Infrastructure as Code.
 
