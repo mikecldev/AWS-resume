@@ -35,7 +35,9 @@ External APIs:
   - ipinfo.io / ip-api.com (geolocation)
 ```
 
-**Full Architecture Diagram:** [ARCHITECTURE.md](ARCHITECTURE.md)
+**Full Architecture Diagram:** 
+![Cloud Resume Challenge - Complete Serverless Architecture](resume_front_end/images/CRC-diagram.png)
+
 
 ## 📁 Project Structure
 
@@ -50,16 +52,13 @@ cloud-resume/
 ├── resume_back_end/           # Backend (Python Lambda)
 │   ├── lambda_function.py     # Main Lambda code
 │   ├── test_lambda_function.py   # Unit tests
-│   ├── test_integration.py    # Integration tests
-│   ├── pytest.ini             # Test configuration
 │   ├── requirements-test.txt  # Test dependencies
-│   └── TEST_README.md         # Testing documentation
+│   
 │
 ├── terraform/                 # Infrastructure as Code
 │   ├── main.tf                # Main Terraform config
 │   ├── variables.tf           # Input variables
 │   ├── outputs.tf             # Output values
-│   ├── terraform.tfvars.example  # Example config
 │   ├── README.md              # Terraform guide
 │   └── modules/               # Reusable modules
 │       ├── s3/                # S3 bucket module
