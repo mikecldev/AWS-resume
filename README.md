@@ -1,6 +1,6 @@
 ## ☁️ Cloud Resume Challenge - AWS Edition (Extended)
 
-### A serverless cloud resume with visitor counter, geolocation tracking, and bot protection using AWS services and Infrastructure as Code.
+#### A serverless cloud resume with visitor counter, geolocation tracking, and bot protection using AWS services and Infrastructure as Code.
 
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
@@ -20,13 +20,13 @@ This project implements the [Cloud Resume Challenge](https://cloudresumechalleng
 - ✅ Data storage in **DynamoDB**
 - ✅ DNS management with **Route 53**
 - ✅ **Infrastructure as Code** with Terraform
-- ✅ Source control (Git)
-- ✅ CI/CD pipeline
+- ✅ **Source control (Git)**
+- ✅ **CI/CD pipeline**
 - ✅**Extended Features:**
 - ✅ **IP geolocation** with map visualization
 - ✅ **reCAPTCHA v3** bot protection
 - ✅ **Comprehensive unit tests**
-- ✅ Security best practices
+- ✅ **Security best practices**
 
 
 
@@ -47,7 +47,7 @@ External APIs:
 
 
 
-## Full Architecture Diagram ## 
+## Full Architecture Diagram
                                             
 
 ![Cloud Resume Challenge - Complete Serverless Architecture](resume_front_end/images/CRC-diagram.png)
@@ -56,7 +56,7 @@ External APIs:
 
 ## 📁 Project Structure
 
-```
+
 cloud-resume/
 ├── resume_front_end/          # Frontend (HTML/CSS/JS)
 │   ├── index.html             # Main page
@@ -86,8 +86,6 @@ cloud-resume/
 └── README.md                  # This file
 
 
-
-```
 
 
 
@@ -119,6 +117,7 @@ cloud-resume/
 
 
 
+
 ## 🛡️ Security Features
 
 ### reCAPTCHA v3 Bot Protection
@@ -139,6 +138,7 @@ cloud-resume/
 
 
 
+
 ## 💰 Cost
 
 Estimated monthly costs with moderate traffic:
@@ -153,6 +153,7 @@ Estimated monthly costs with moderate traffic:
 | Route 53 (optional) | ~$0.50 |
 | reCAPTCHA | **FREE** |
 | **Total** | **$1-2/month** |
+
 
 
 
@@ -171,6 +172,7 @@ Estimated monthly costs with moderate traffic:
 
 
 
+
 ## The Road Ahead (Extended Features)
 
 •	AI Chatbot: Answers questions about my skills and projects (Lambda integration with an LLM provider)
@@ -178,6 +180,7 @@ Estimated monthly costs with moderate traffic:
 •	Live Now Tracker: Shows how many visitors are online right now
 
 •	Duplicate Visitor Detection: Ensures accurate metrics by filtering out repeat visits
+
 
 
 
