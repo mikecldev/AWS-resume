@@ -9,7 +9,7 @@ A serverless cloud resume with visitor counter, geolocation tracking, and bot pr
 
 ## 🎯 Project Overview
 
-This project implements the [Cloud Resume Challenge](https://cloudresumechallenge.dev/) with additional features:
+This project implements the [Cloud Resume Challenge](https://cloudresumechallenge.dev/) by Forest Brazeal with additional features:
 
 - ✅ Static website hosted on **AWS S3**
 - ✅ HTTPS distribution via **CloudFront CDN**
@@ -18,8 +18,8 @@ This project implements the [Cloud Resume Challenge](https://cloudresumechalleng
 - ✅ **IP geolocation** with interactive map
 - ✅ **reCAPTCHA v3** bot protection
 - ✅ **Infrastructure as Code** with Terraform
-- ✅ **Comprehensive unit tests** (37+ tests)
-- ✅ DNS management with **Route 53** (optional)
+- ✅ **Comprehensive unit tests** 
+- ✅ DNS management with **Route 53**
 
 ## 🏗️ Architecture
 
@@ -35,10 +35,13 @@ External APIs:
   - ipinfo.io / ip-api.com (geolocation)
 ```
 
+
+
                                             **Full Architecture Diagram:** 
                                             
 
 ![Cloud Resume Challenge - Complete Serverless Architecture](resume_front_end/images/CRC-diagram.png)
+
 
 
 ## 📁 Project Structure
@@ -73,7 +76,9 @@ cloud-resume/
 └── README.md                  # This file
 
 
+
 ```
+
 
 
 ## 🛠️ Technologies Used
@@ -105,6 +110,7 @@ cloud-resume/
 
 ```
 
+
 ## 🛡️ Security Features
 
 ### reCAPTCHA v3 Bot Protection
@@ -112,6 +118,7 @@ cloud-resume/
 - Invisible bot detection (no challenges for users)
 - Scores requests 0.0 (bot) to 1.0 (human)
 - Blocks requests with score < 0.5
+
 
 ### AWS Security Best Practices
 
@@ -121,6 +128,7 @@ cloud-resume/
 - Environment variables for secrets
 - DynamoDB encryption at rest
 - CloudWatch logging for audit trail
+
 
 
 ## 💰 Cost
@@ -139,6 +147,7 @@ Estimated monthly costs with moderate traffic:
 | **Total** | **$1-2/month** |
 
 
+
 ## 🎓 Skills Demonstrated
 
 - ✅ **Cloud Architecture** - Serverless design
@@ -154,11 +163,6 @@ Estimated monthly costs with moderate traffic:
 
 ```
 
-## 🔗 Links
-
-- **Cloud Resume Challenge**: https://cloudresumechallenge.dev/
-- **My LinkedIn**: https://www.linkedin.com/in/michail-kakos/
-- **My GitHub**: https://github.com/mikecldev/AWS-resume
 
 ## 🎯 Project Completion Checklist
 
@@ -172,7 +176,7 @@ Estimated monthly costs with moderate traffic:
 - [x] DynamoDB for data storage
 - [x] Infrastructure as Code (Terraform)
 - [x] Source control (Git)
-- [x] CI/CD pipeline (ready)
+- [x] CI/CD pipeline
 - [x] **Extended Features:**
   - [x] IP geolocation with map visualization
   - [x] reCAPTCHA v3 bot protection
@@ -182,4 +186,16 @@ Estimated monthly costs with moderate traffic:
   - [x] Security best practices
 
 ---
+
+The Road Ahead (Extended Features)
+•	AI Chatbot: Answers questions about my skills and projects (Lambda integration with an LLM provider)
+•	Live Now Tracker: Shows how many visitors are online right now
+•	Duplicate Visitor Detection: Ensures accurate metrics by filtering out repeat visits
+
+
+## 🔗 Links
+
+- **Cloud Resume Challenge**: https://cloudresumechallenge.dev/
+- **My LinkedIn**: https://www.linkedin.com/in/michail-kakos/
+- **My GitHub**: https://github.com/mikecldev/AWS-resume
 
