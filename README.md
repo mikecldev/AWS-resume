@@ -18,11 +18,12 @@ This project implements the [Cloud Resume Challenge](https://cloudresumechalleng
 - ✅ HTTPS distribution via **CloudFront CDN**
 - ✅ Visitor counter API with **API Gateway + Lambda**
 - ✅ Data storage in **DynamoDB**
+- ✅ DNS management with **Route 53**
+- ✅ **Infrastructure as Code** with Terraform
 - ✅ **IP geolocation** with interactive map
 - ✅ **reCAPTCHA v3** bot protection
-- ✅ **Infrastructure as Code** with Terraform
-- ✅ **Comprehensive unit tests** 
-- ✅ DNS management with **Route 53**
+- ✅ **Comprehensive unit tests**
+
 
 
 ## 🏗️ Architecture
