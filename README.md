@@ -2,14 +2,17 @@
 
 A serverless cloud resume with visitor counter, geolocation tracking, and bot protection using AWS services and Infrastructure as Code.
 
+
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
 ![Terraform](https://img.shields.io/badge/IaC-Terraform-purple)
 ![Python](https://img.shields.io/badge/Backend-Python-blue)
 ![reCAPTCHA](https://img.shields.io/badge/Security-reCAPTCHA%20v3-green)
 
+
 ## 🎯 Project Overview
 
 This project implements the [Cloud Resume Challenge](https://cloudresumechallenge.dev/) by Forest Brazeal with additional features:
+
 
 - ✅ Static website hosted on **AWS S3**
 - ✅ HTTPS distribution via **CloudFront CDN**
@@ -20,6 +23,7 @@ This project implements the [Cloud Resume Challenge](https://cloudresumechalleng
 - ✅ **Infrastructure as Code** with Terraform
 - ✅ **Comprehensive unit tests** 
 - ✅ DNS management with **Route 53**
+
 
 ## 🏗️ Architecture
 
@@ -37,7 +41,7 @@ External APIs:
 
 
 
-                                            **Full Architecture Diagram:** 
+## Full Architecture Diagram ## 
                                             
 
 ![Cloud Resume Challenge - Complete Serverless Architecture](resume_front_end/images/CRC-diagram.png)
@@ -187,10 +191,14 @@ Estimated monthly costs with moderate traffic:
 
 ---
 
-The Road Ahead (Extended Features)
+## The Road Ahead (Extended Features)
+
 •	AI Chatbot: Answers questions about my skills and projects (Lambda integration with an LLM provider)
+
 •	Live Now Tracker: Shows how many visitors are online right now
+
 •	Duplicate Visitor Detection: Ensures accurate metrics by filtering out repeat visits
+
 
 
 ## 🔗 Links
