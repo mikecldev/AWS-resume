@@ -118,8 +118,6 @@ cloud-resume/
 - unittest
 
 
-```
-
 
 ## 🛡️ Security Features
 
